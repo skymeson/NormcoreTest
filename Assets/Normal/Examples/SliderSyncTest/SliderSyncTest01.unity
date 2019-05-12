@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _appKey: fddb959a-cfd5-45e2-96a0-a4d13ca9334e
-  _roomToJoinOnStart: TestRoom100
+  _roomToJoinOnStart: TestRoom97
   _joinRoomOnStart: 1
   _debugLogging: 0
 --- !u!4 &2076791983
