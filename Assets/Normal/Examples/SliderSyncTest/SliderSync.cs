@@ -7,13 +7,13 @@ using Normal.Realtime;
 public class SliderSync : RealtimeComponent {
 
     //private MeshRenderer _meshRenderer;
-    private Slider slider; 
+    private Slider _slider; 
     private SliderSyncModel _model;
 	
 	void Start () {
         // Get a reference to the mesh renderer
         //_meshRenderer = GetComponent<MeshRenderer>();
-        slider = GetComponent<Slider>();
+        _slider = GetComponent<Slider>();
 
     }
 	
@@ -44,8 +44,10 @@ public class SliderSync : RealtimeComponent {
 
     private void UpdateSlider() {
         // Get the value from the model and set it on the Slider.
-        slider.value = _model.slidevalue;
+        _slider.value = _model.slidevalue;
     }
+
+
 
     public void SetSliderValue(float value) {
         // Set the color on the model

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SliderSyncTest : MonoBehaviour {
 
-    private Slider slider;
+    public Slider slider;
 
     public Text text;
 
@@ -20,7 +20,7 @@ public class SliderSyncTest : MonoBehaviour {
 
 	void Start () {
 
-        slider = GetComponent<Slider>();
+        //slider = GetComponent<Slider>();
 
         _value = slider.value;
         text.text = _value.ToString();
@@ -30,7 +30,6 @@ public class SliderSyncTest : MonoBehaviour {
 	
 	void Update () {
 
-        _value = slider.value;
 
         // If the _float has changed (via the inspector), call SetFloat on the slider sync component.
         if (_value != _previousValue) {
@@ -39,5 +38,10 @@ public class SliderSyncTest : MonoBehaviour {
             text.text = _value.ToString();
 
         }
+    }
+
+    public void SetSliderValue(float value)
+    {
+        _value = value;
     }
 }

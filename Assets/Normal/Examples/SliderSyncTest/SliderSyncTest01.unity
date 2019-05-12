@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 86879611}
+      - m_Target: {fileID: 86879612}
         m_MethodName: SetSliderValue
         m_Mode: 0
         m_Arguments:
@@ -421,6 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7901a76ec17c14e619a0f948db76f541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 86879609}
   text: {fileID: 61761281}
   _value: 40
 --- !u!1 &170076733
